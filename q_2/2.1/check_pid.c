@@ -11,17 +11,18 @@ void check_pid(int pid){
     if(num == 0) printf("Process %d exists\n",pid);
     switch(errno){
         case EPERM:
-        printf("Process %d does not exist\n",pid);
+        printf("Process %d exists but we have no permission \n",pid);
         break;
         
         case ESRCH:
-        printf("Process %d does not exist\n",pid);
+        printf("Process %d does not exists\n",pid);
         break;
     }
 }
 
 
-int main()
+int main(int argc, char *argv[])
 {
-    check_pid(1);
+    int pid = atoi(argv[1]);
+    check_pid(pid);
 }
