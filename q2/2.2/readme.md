@@ -1,4 +1,4 @@
-To run the client and server you should go throught the following steps:
+To run the client and server you should go through the following steps:
 
 1- Open two terminals.
 2- In the first terminal : 
@@ -14,4 +14,4 @@ To run the client and server you should go throught the following steps:
 5- If you want to send more signals of type SIGINT or SIGUSR1, repeat the step 4 starting from b. 
     When you will send SIGUSR1, the server will terminate and show how many signals SIGINT the server received.
 
-*** If you want to repeat the process from the beginning , write in the command line : make clean, and then start again from step 2 ***
+*** If you want to repeat the process from the beginning , write in the command line : make clean , and then start again from step 2 ***
