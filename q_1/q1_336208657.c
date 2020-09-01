@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 char globBuf[65536];            /* 1. BSS data section */
 int primes[] = { 2, 3, 5, 7 };  /* 2. Initialized data section */
 

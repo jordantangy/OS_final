@@ -10,11 +10,10 @@
 struct sched_attr
 {
    unsigned int size; 
-   unsigned int sched_policy; // Policy (CHED_*)
-   unsigned int sched_flags; // flags
-   unsigned int sched_nice; // Nice value (SCHED_OTHER SCHED_BATCH)
-   unsigned int sched_priority; //Static priority SCHED_FIFO, SCHED_RR
-    /*Reaining fields are for SCHED_DEADLINE */
+   unsigned int sched_policy; 
+   unsigned int sched_flags; 
+   unsigned int sched_nice; 
+   unsigned int sched_priority; 
    unsigned int sched_runtime;
    unsigned int sched_deadline;
    unsigned int sched_period;
@@ -79,7 +78,7 @@ int main(int argc, char *argv[]){
 			puts("The parameters are not valid");
 			break;
 		case EPERM:
-			puts("You don't have the permission for such a queurie");
+			puts("You don't have the permission for this kind of queury");
 			break;
 		case ESRCH:
 			puts("PID not found");

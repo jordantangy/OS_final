@@ -14,10 +14,9 @@ void sender(pid_t pid, int sig_type, int numOfSignals){
           }
 	}
     else {
-            for (int i=0; i < numOfSignals; i++){
              kill(pid, SIGUSR1);
         }
-    }   
+       
 }
 
 int main (int argc, char* argv[]){
